@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I'm a second year student 
+I am a second-year undergraduate student from Zhejiang University and the University of Edinburgh.
