@@ -1,0 +1,1 @@
+- **Leveraging Large Language Models for Redundancy-Aware Pathway Analysis and Deep Biological Interpretation** — Ge, Zhang, Liu, Jiang, Gao, Tan, Zhang, **Shen**, Zhou, Zhou, Wang*, Shen* (2025). bioRxiv preprint. Co-first author. [doi:10.1101/2025.08.23.671949](https://doi.org/10.1101/2025.08.23.671949)

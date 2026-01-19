@@ -1,0 +1,9 @@
+# Large PDF files (host externally)
+static/notes/IFBS2-Physiology.pdf
+static/notes/BG2-Biomedical Genetics.pdf
+static/notes/ICMB1-Molecular Biology.pdf
+static/notes/MBE3-Molecular Biology of Epigenetics.pdf
+static/notes/IBI1-Introduction to Bioinformatics.pdf
+
+# macOS
+.DS_Store
