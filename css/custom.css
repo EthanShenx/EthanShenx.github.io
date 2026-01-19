@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+body,
+.navigation,
+.navigation-title,
+.navigation-list,
+.title,
+h1, h2, h3, h4, h5, h6,
+a {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.navigation-title {
+  font-weight: 600;
+}
+
+.navigation-link {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p, li {
+  font-weight: 400;
+}
+
+/* Force header/navigation to use the same font */
+.navigation,
+.navigation * {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+  font-weight: 600;
+}
+
+/* Preserve Font Awesome icon fonts */
+.fa, .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+.fa-regular {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 400 !important;
+}
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+
+/* Calm nav hover: keep color, no underline, slight opacity shift */
+.navigation a:hover,
+.navigation a:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+  opacity: 0.85;
+}
+
+/* Ensure avatar renders as a true circle */
+.avatar img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+/* Software logos: vertical stack, no stretching */
+.software-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.software-logos img {
+  max-height: 96px;
+  width: auto;
+  display: block;
+}
+.software-logos a {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  max-width: 220px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.software-logos span {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: inherit;
+}
+.software-logos strong {
+  font-weight: 600;
+}
+
+/* Software page: plain text links for descriptions */
+.software-logos a {
+  color: #212121;
+  text-decoration: none;
+}
+.software-logos a:hover,
+.software-logos a:focus {
+  color: #212121;
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Hide About link in the header without removing the page */
+.navigation a[href="/about/"],
+.navigation a[href="/about"],
+.navigation .navigation-link[href="/about/"],
+.navigation .navigation-link[href="/about"] {
+  display: none !important;
+}
+
+/* Notes page styling */
+.notes-intro {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.note-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.note-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f5f5f5;
+}
+
+.note-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.note-info strong {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #212121;
+}
+
+.note-info span {
+  font-size: 1.15rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Dark mode support for notes */
+.colorscheme-dark .notes-intro {
+  color: #aaa;
+}
+
+.colorscheme-dark .note-card {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.colorscheme-dark .note-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.colorscheme-dark .note-card img {
+  border-color: #333;
+  background: #222;
+}
+
+.colorscheme-dark .note-info strong {
+  color: #e0e0e0;
+}
+
+.colorscheme-dark .note-info span {
+  color: #999;
+}
+
+/* Responsive adjustments for notes */
+@media only screen and (max-width: 600px) {
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .note-card img {
+    height: 150px;
+  }
+}
+
+/* Research page graphical abstracts */
+.markdown-body img[alt="Graphical abstract"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0 2.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.colorscheme-dark .markdown-body img[alt="Graphical abstract"] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
