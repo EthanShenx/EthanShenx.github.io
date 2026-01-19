@@ -12,7 +12,7 @@ Course notes and study materials from my undergraduate and graduate studies in c
       <span>Sequence alignment, hidden Markov models, phylogenetic trees, and graph algorithms for genomic analysis.</span>
     </div>
   </a>
-  <a href="/static/notes/IBI1-Introduction%20to%20Bioinformatics.pdf" target="_blank" class="note-card">
+  <a href="https://drive.google.com/file/d/1196hRG9gGwFwlC_iNCt7DqCI2_iEsDXe/view?usp=sharing" target="_blank" class="note-card">
     <img src="/images/notes/IBI1-Introduction-to-Bioinformatics.png" alt="Introduction to Bioinformatics" />
     <div class="note-info">
       <strong>Introduction to Bioinformatics</strong>
@@ -38,14 +38,14 @@ Course notes and study materials from my undergraduate and graduate studies in c
       <span>High-throughput sequencing technologies, genome annotation, and proteome analysis methods.</span>
     </div>
   </a>
-  <a href="/static/notes/MBE3-Molecular%20Biology%20of%20Epigenetics.pdf" target="_blank" class="note-card">
+  <a href="https://drive.google.com/file/d/1h97_GHtOcpIDBPS7vn0kyy1gGnnxg1gg/view?usp=sharing" target="_blank" class="note-card">
     <img src="/images/notes/MBE3-Molecular-Biology-of-Epigenetics.png" alt="Molecular Biology of Epigenetics" />
     <div class="note-info">
       <strong>Molecular Biology of Epigenetics</strong>
       <span>DNA methylation, histone modifications, chromatin remodeling, and epigenetic inheritance mechanisms.</span>
     </div>
   </a>
-  <a href="/static/notes/BG2-Biomedical%20Genetics.pdf" target="_blank" class="note-card">
+  <a href="https://drive.google.com/file/d/1vbnGCIpoh-hZm4VMOgcLv0xUpyQy91hB/view?usp=sharing" target="_blank" class="note-card">
     <img src="/images/notes/BG2-Biomedical-Genetics.png" alt="Biomedical Genetics" />
     <div class="note-info">
       <strong>Biomedical Genetics</strong>
@@ -71,14 +71,14 @@ Course notes and study materials from my undergraduate and graduate studies in c
 ## Molecular Biology & Physiology
 
 <div class="notes-grid">
-  <a href="/static/notes/ICMB1-Molecular%20Biology.pdf" target="_blank" class="note-card">
+  <a href="https://drive.google.com/file/d/1fmegrPpPM71flW1cHlgAd5PEFo27vBXD/view?usp=sharing" target="_blank" class="note-card">
     <img src="/images/notes/ICMB1-Molecular-Biology.png" alt="Molecular Biology" />
     <div class="note-info">
       <strong>Molecular Biology</strong>
       <span>DNA replication, transcription, translation, and molecular mechanisms of gene regulation.</span>
     </div>
   </a>
-  <a href="/static/notes/IFBS2-Physiology.pdf" target="_blank" class="note-card">
+  <a href="https://drive.google.com/file/d/1Wh_yG0EN2mLdAcoX_nxUZnr2QdnXfr-c/view?usp=sharing" target="_blank" class="note-card">
     <img src="/images/notes/IFBS2-Physiology.png" alt="Physiology" />
     <div class="note-info">
       <strong>Physiology</strong>
