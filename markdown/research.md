@@ -46,3 +46,5 @@ Role: Leader
 - Designed and optimized the model architecture and training pipeline using Python and HMM libraries
 
 ![Graphical abstract](/images/projects_graphical_abstract/mitoSpotter.png)
+
+![Graphical abstract](/images/projects_graphical_abstract/benchmark.jpg)
