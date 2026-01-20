@@ -1,5 +1,5 @@
 <div class="notes-intro">
-Course notes and study materials from my undergraduate and graduate studies in computational genomics and biomedical sciences.
+Course notes and study materials from my undergraduate studies and online courses in computational genomics and biomedical sciences.
 </div>
 
 ## Bioinformatics & Data Science
