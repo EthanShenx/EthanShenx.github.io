@@ -90,12 +90,6 @@
 
 <body class="preload-transitions colorscheme-auto">
   
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
 
   <main class="wrapper">
     <nav class="navigation">
@@ -133,6 +127,12 @@
           
             <li class="navigation-item">
               <a class="navigation-link " href="/contact/"><i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i> Contact</a>
+            </li>
+
+            <li class="navigation-item">
+              <a id="dark-mode-toggle" class="navigation-link colorscheme-toggle">
+                <i class="fa-solid fa-moon fa-fw" aria-hidden="true"></i>
+              </a>
             </li>
           
         
@@ -204,7 +204,7 @@
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/theme-toggle.js"></script>
   <script>
     (function() {
       var links = document.querySelectorAll('.js-email-link');
