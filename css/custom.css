@@ -245,3 +245,58 @@ p, li {
 .colorscheme-dark .markdown-body img[alt="Graphical abstract"] {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+/* Enhanced Theme Toggle Button in Navigation */
+#dark-mode-toggle {
+  /* Override Coder theme's fixed positioning */
+  position: static !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: auto !important;
+  margin: 0 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  opacity: 0.85;
+}
+
+/* Icon color for light mode - moon icon */
+.colorscheme-light #dark-mode-toggle i.fa-moon,
+#dark-mode-toggle i.fa-moon {
+  color: inherit;
+}
+
+/* Icon color for dark mode - sun icon with golden color */
+.colorscheme-dark #dark-mode-toggle i.fa-sun {
+  color: #ffd700;
+}
+
+/* Improved contrast for dark mode text */
+.colorscheme-dark {
+  --text-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --link-color: #66b3ff;
+}
+
+.colorscheme-dark body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.colorscheme-dark a {
+  color: var(--link-color);
+}
+
+.colorscheme-dark .software-logos a {
+  color: #e0e0e0;
+}
+
+.colorscheme-dark .software-logos a:hover,
+.colorscheme-dark .software-logos a:focus {
+  color: #e0e0e0;
+}

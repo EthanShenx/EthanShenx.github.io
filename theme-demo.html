@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Theme Toggle Demo - Yuchen (Ethan) Shen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="stylesheet" href="/css/coder.min.eff6eda43c09116b3909b2b933bee043653449ef21aa96bc6f1bb86ccf405ef9.css" media="screen" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/custom.css" media="screen" />
+  <link rel="stylesheet" href="/css/coder-dark.min.10a77a1787ea7c95135794620cecb28455ca2d27adea9a91b6a42d3dda57298a.css" media="screen" />
+
+  <style>
+    .demo-container {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+    }
+    .demo-section {
+      margin: 2rem 0;
+      padding: 2rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+    }
+    .colorscheme-dark .demo-section {
+      border-color: #444;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      padding: 0.5rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+    .theme-info {
+      padding: 1rem;
+      background: rgba(0, 123, 255, 0.1);
+      border-left: 4px solid #007bff;
+      margin: 1rem 0;
+    }
+    .colorscheme-dark .theme-info {
+      background: rgba(102, 179, 255, 0.1);
+      border-left-color: #66b3ff;
+    }
+  </style>
+</head>
+
+<body class="preload-transitions colorscheme-auto">
+  <div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+      <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <main class="wrapper">
+    <div class="demo-container">
+      <h1>🌓 Theme Toggle Demo</h1>
+
+      <div class="demo-section">
+        <h2>Features</h2>
+        <ul class="feature-list">
+          <li><strong>Dynamic Icons:</strong> Moon icon in light mode, sun icon in dark mode</li>
+          <li><strong>Persistent Storage:</strong> Your preference is saved in localStorage</li>
+          <li><strong>Auto-Apply:</strong> Theme applies automatically on page load</li>
+          <li><strong>System Preference:</strong> Respects system dark mode if no preference set</li>
+          <li><strong>Smooth Transitions:</strong> Elegant animations when switching themes</li>
+          <li><strong>High Contrast:</strong> Optimized colors for readability in both modes</li>
+        </ul>
+      </div>
+
+      <div class="demo-section">
+        <h2>How It Works</h2>
+        <p>The theme toggle is located in the navigation bar, to the right of the "Contact" button. Click it to toggle between Day and Night modes:</p>
+        <ul>
+          <li><strong>Day Mode (Light):</strong> Uses light background with dark text, moon icon</li>
+          <li><strong>Night Mode (Dark):</strong> Uses dark background with light text, sun icon</li>
+        </ul>
+
+        <div class="theme-info">
+          <strong>💡 Tip:</strong> The icon shows what clicking will activate. In dark mode, the sun icon means clicking switches to light mode, and vice versa.
+        </div>
+      </div>
+
+      <div class="demo-section">
+        <h2>Technical Details</h2>
+        <p><strong>CSS Classes:</strong></p>
+        <ul>
+          <li><code>.colorscheme-light</code> - Light theme styles</li>
+          <li><code>.colorscheme-dark</code> - Dark theme styles</li>
+        </ul>
+
+        <p><strong>Icons:</strong></p>
+        <ul>
+          <li><code>fa-moon</code> - Displayed in light mode</li>
+          <li><code>fa-sun</code> - Displayed in dark mode (golden color)</li>
+        </ul>
+
+        <p><strong>Storage:</strong></p>
+        <ul>
+          <li>Key: <code>colorscheme</code></li>
+          <li>Values: <code>"light"</code> or <code>"dark"</code></li>
+        </ul>
+      </div>
+
+      <div class="demo-section">
+        <h2>Test Content</h2>
+        <p>This is a paragraph to test text readability in both themes. The contrast has been optimized to ensure comfortable reading in all lighting conditions.</p>
+
+        <h3>Subheading Example</h3>
+        <p>Here's a <a href="#">link example</a> to see how links appear in both themes. Links use a nice blue color in light mode and a lighter blue in dark mode for better contrast.</p>
+
+        <blockquote>
+          <p>This is a blockquote to demonstrate quote styling in both light and dark modes.</p>
+        </blockquote>
+
+        <code>const theme = localStorage.getItem('colorscheme');</code>
+      </div>
+
+      <div class="demo-section">
+        <h2>Browser Console Test</h2>
+        <p>Open your browser's developer console and try these commands:</p>
+        <pre><code>// Check current theme
+document.body.className
+
+// Check saved preference
+localStorage.getItem('colorscheme')
+
+// Listen for theme changes
+document.addEventListener('themeChanged', () => {
+  console.log('Theme changed!', document.body.className);
+});</code></pre>
+      </div>
+
+      <p style="text-align: center; margin-top: 3rem;">
+        <a href="/">← Back to Home</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="/js/theme-toggle.js"></script>
+</body>
+</html>
