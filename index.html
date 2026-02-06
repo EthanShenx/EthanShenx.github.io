@@ -299,11 +299,29 @@
 
   </main>
 
+  <div class="ra-popup" id="ra-popup" aria-hidden="true">
+    <div class="ra-popup__panel" role="dialog" aria-modal="true" aria-labelledby="ra-popup-title" aria-describedby="ra-popup-desc" tabindex="-1">
+      <button class="ra-popup__close" type="button" aria-label="Close popup" data-popup-close>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <p class="ra-popup__eyebrow">Fall Search</p>
+      <h2 class="ra-popup__title" id="ra-popup-title">Seeking 27 Fall RA/PhD positions</h2>
+      <p class="ra-popup__body" id="ra-popup-desc">
+        If you are hiring or can point me to opportunities, I would appreciate a quick note.
+      </p>
+      <div class="ra-popup__actions">
+        <a class="ra-popup__button" href="/contact/">Contact</a>
+        <button class="ra-popup__ghost" type="button" data-popup-close>Not now</button>
+      </div>
+    </div>
+  </div>
+
   
 
   
   
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/ra-phd-popup.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="/js/markdown-loader.js"></script>
