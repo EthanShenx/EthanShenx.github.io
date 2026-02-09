@@ -11,7 +11,7 @@
     <img src="/images/pfs_palette_logo.jpg" alt="pfsPalettes logo" />
     <span><strong>pfsPalettes</strong> — A lightweight macOS floating palette organization tool with academic palettes.</span>
   </a>
-  <a href="https://skin-scsaid.com/" target="_blank" rel="noopener">
+  <a href="https://github.com/Dostoyevsky7/SkinDB_web" target="_blank" rel="noopener">
     <img src="/images/scSAID_logo.png" alt="scSAID logo" />
     <span><strong>scSAID</strong> — A million-scale cross-species skin single-cell transcriptomic database.</span>
   </a>
