@@ -523,3 +523,94 @@ p, li {
     transition: none;
   }
 }
+
+/* ── Values marquee ───────────────────────────────────────────────── */
+.values-marquee {
+  overflow: hidden;
+  width: 100%;
+  padding: 0.4rem 0 0.8rem;
+  outline: none;
+}
+
+.values-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: values-scroll 50s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.values-marquee:hover .values-track {
+  animation-play-state: paused;
+}
+
+@keyframes values-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.values-card {
+  flex-shrink: 0;
+  width: 290px;
+  padding: 1.6rem 1.5rem 1.4rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  user-select: none;
+}
+
+.values-card__icon {
+  font-size: 2rem;
+  color: #212121;
+  line-height: 1;
+}
+
+.values-card__title {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #212121;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.values-card__belief {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Dark mode */
+.colorscheme-dark .values-card {
+  background: #2a2a2a;
+  border-color: #424242;
+}
+
+.colorscheme-dark .values-card__icon,
+.colorscheme-dark .values-card__title {
+  color: #dadada;
+}
+
+.colorscheme-dark .values-card__belief {
+  color: #999;
+}
+
+/* Reduced motion: stop scrolling, wrap cards, hide duplicates */
+@media (prefers-reduced-motion: reduce) {
+  .values-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .values-card[aria-hidden="true"] {
+    display: none;
+  }
+}
