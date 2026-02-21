@@ -536,18 +536,7 @@ p, li {
   display: flex;
   gap: 16px;
   width: max-content;
-  animation: values-scroll 50s linear infinite;
   will-change: transform;
-}
-
-/* Pause on hover */
-.values-marquee:hover .values-track {
-  animation-play-state: paused;
-}
-
-@keyframes values-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
 }
 
 .values-card {
@@ -603,10 +592,9 @@ p, li {
   color: #999;
 }
 
-/* Reduced motion: stop scrolling, wrap cards, hide duplicates */
+/* Reduced motion: JS skips animation; CSS wraps cards into a readable grid */
 @media (prefers-reduced-motion: reduce) {
   .values-track {
-    animation: none;
     flex-wrap: wrap;
     width: 100%;
   }
