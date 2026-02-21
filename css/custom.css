@@ -607,7 +607,7 @@ p, li {
 .home-visit-map {
   margin-top: 0.9rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   line-height: 0;
 }
 
@@ -615,7 +615,7 @@ p, li {
   width: 230px;
   height: 145px;
   transform: scale(0.62);
-  transform-origin: top right;
+  transform-origin: top center;
 }
 
 .home-visit-map img {
