@@ -602,3 +602,35 @@ p, li {
     display: none;
   }
 }
+
+/* Home footer visitor tracker (mini) */
+.home-visit-map {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 0;
+}
+
+.home-visit-map__scale {
+  width: 230px;
+  height: 145px;
+  transform: scale(0.62);
+  transform-origin: top right;
+}
+
+.home-visit-map img {
+  width: 230px;
+  height: auto;
+  border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-visit-map {
+    justify-content: center;
+  }
+
+  .home-visit-map__scale {
+    transform: scale(0.68);
+    transform-origin: top center;
+  }
+}
