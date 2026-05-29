@@ -85,6 +85,27 @@ Course notes and study materials from my undergraduate studies and online course
       <span>Human organ systems, homeostasis, cellular physiology, and integrative body functions.</span>
     </div>
   </a>
+  <a href="/static/notes/ERB3-Endocrinology.pdf" target="_blank" class="note-card">
+    <img src="/images/notes/ERB3-Endocrinology.png" alt="Endocrinology" />
+    <div class="note-info">
+      <strong>Endocrinology</strong>
+      <span>Hormonal signaling, endocrine glands, feedback regulation, and clinical endocrine disorders.</span>
+    </div>
+  </a>
+  <a href="/static/notes/Molecular%20Techniques.pdf" target="_blank" class="note-card">
+    <img src="/images/notes/Molecular-Techniques.png" alt="Molecular Techniques" />
+    <div class="note-info">
+      <strong>Molecular Techniques</strong>
+      <span>Core laboratory methods including PCR, gel electrophoresis, cloning, sequencing, and protein analysis techniques.</span>
+    </div>
+  </a>
+  <a href="/static/notes/IBMS3-Experiment%20Deconstruction.pdf" target="_blank" class="note-card">
+    <img src="/images/notes/IBMS3-Experiment-Deconstruction.png" alt="Experiment Deconstruction" />
+    <div class="note-info">
+      <strong>Experiment Deconstruction</strong>
+      <span>Critical analysis and deconstruction of landmark biomedical experiments, covering experimental design, controls, and interpretation.</span>
+    </div>
+  </a>
 </div>
 
 ## Programming & Tools

@@ -15,4 +15,8 @@
     <img src="/images/scSAID_logo.png" alt="scSAID logo" />
     <span><strong>scSAID</strong> — A million-scale cross-species skin single-cell transcriptomic database.</span>
   </a>
+  <a href="https://github.com/EthanShenx/psoSpotter-r" target="_blank" rel="noopener">
+    <img src="/images/psoSpotter_logo.png" alt="psoSpotter logo" />
+    <span><strong>psoSpotter</strong> — Single-cell RNA-seq biomarker-panel algorithm for sensitive psoriasis detection that selects a minimally viable gene panel in a cross-species manner.</span>
+  </a>
 </div>
