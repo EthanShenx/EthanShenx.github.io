@@ -1,3 +1,16 @@
+/* ── Animation tokens ─────────────────────────────────────────────── */
+:root {
+  --ease-standard:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:       cubic-bezier(0, 0, 0.2, 1);
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out:    cubic-bezier(0.4, 0, 0.6, 1);
+  --dur-fast:   150ms;
+  --dur-base:   200ms;
+  --dur-slow:   300ms;
+  --dur-enter:  400ms;
+  --dur-enter-slow: 600ms;
+}
+
 /* Poppins — self-hosted */
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/poppins/poppins-400.woff2') format('woff2'); }
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/poppins/poppins-500.woff2') format('woff2'); }
@@ -60,7 +73,7 @@ p, li {
   font-weight: 400 !important;
 }
 
-/* Calm nav hover: keep color, no underline, slight opacity shift */
+/* ── Navigation links — animated underline wipe ───────────────────── */
 .navigation a:hover,
 .navigation a:focus {
   color: inherit !important;
@@ -68,12 +81,47 @@ p, li {
   opacity: 0.85;
 }
 
-/* Ensure avatar renders as a true circle */
+.navigation a.navigation-link {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.navigation a.navigation-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform var(--dur-fast) var(--ease-in-out);
+}
+
+.navigation a.navigation-link:hover::after,
+.navigation a.navigation-link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* ── Avatar ───────────────────────────────────────────────────────── */
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .avatar img {
   width: 18rem;
   height: 18rem;
   object-fit: cover;
   border-radius: 50%;
+  transition: box-shadow var(--dur-slow) var(--ease-standard);
+}
+
+.avatar img:hover {
+  box-shadow: 0 0 0 4px rgba(33, 33, 33, 0.12);
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,7 +131,22 @@ p, li {
   }
 }
 
-/* Software logos: vertical stack, no stretching */
+/* ── Social icon links (hero) ─────────────────────────────────────── */
+.about ul li a {
+  display: inline-block;
+  transition: opacity var(--dur-fast) var(--ease-standard);
+}
+
+.about ul li a:hover,
+.about ul li a:focus-visible {
+  opacity: 0.55;
+}
+
+.about ul li a:active {
+  opacity: 0.4;
+}
+
+/* ── Software logos ───────────────────────────────────────────────── */
 .software-logos {
   display: flex;
   flex-direction: row;
@@ -106,6 +169,15 @@ p, li {
   padding: 0;
   border: 0;
   background: transparent;
+  color: #212121;
+  text-decoration: none;
+  transition: opacity var(--dur-fast) var(--ease-standard);
+}
+.software-logos a:hover,
+.software-logos a:focus {
+  color: #212121;
+  text-decoration: none;
+  opacity: 0.6;
 }
 .software-logos span {
   display: block;
@@ -117,18 +189,6 @@ p, li {
   font-weight: 600;
 }
 
-/* Software page: plain text links for descriptions */
-.software-logos a {
-  color: #212121;
-  text-decoration: none;
-}
-.software-logos a:hover,
-.software-logos a:focus {
-  color: #212121;
-  text-decoration: none;
-  opacity: 1;
-}
-
 /* Hide About link in the header without removing the page */
 .navigation a[href="/about/"],
 .navigation a[href="/about"],
@@ -137,7 +197,7 @@ p, li {
   display: none !important;
 }
 
-/* Notes page styling */
+/* ── Notes page ───────────────────────────────────────────────────── */
 .notes-intro {
   font-size: 1.4rem;
   color: #666;
@@ -161,12 +221,14 @@ p, li {
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    border-color var(--dur-base) var(--ease-standard),
+    box-shadow   var(--dur-base) var(--ease-standard);
 }
 
 .note-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  border-color: #aaa;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   text-decoration: none;
   color: inherit;
 }
@@ -210,7 +272,7 @@ p, li {
 }
 
 .colorscheme-dark .note-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
 .colorscheme-dark .note-card img {
@@ -251,9 +313,8 @@ p, li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced Theme Toggle Button in Navigation */
+/* ── Theme toggle ─────────────────────────────────────────────────── */
 #dark-mode-toggle {
-  /* Override Coder theme's fixed positioning */
   position: static !important;
   bottom: auto !important;
   left: auto !important;
@@ -261,9 +322,8 @@ p, li {
   margin: 0 !important;
   font-size: inherit !important;
   line-height: inherit !important;
-
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--dur-slow) var(--ease-standard);
 }
 
 #dark-mode-toggle:hover {
@@ -306,7 +366,7 @@ p, li {
   color: #e0e0e0;
 }
 
-/* RA/PhD popup — matches Coder theme aesthetic */
+/* ── RA/PhD popup ─────────────────────────────────────────────────── */
 .ra-popup {
   position: fixed;
   inset: 0;
@@ -319,7 +379,7 @@ p, li {
   backdrop-filter: blur(2px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity var(--dur-base) var(--ease-standard);
 }
 
 .ra-popup.is-visible {
@@ -339,7 +399,7 @@ p, li {
   padding: 2.4rem 2.4rem 2rem;
   transform: translateY(8px);
   opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-standard);
   outline: none;
 }
 
@@ -395,7 +455,7 @@ p, li {
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: background var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard);
 }
 
 .ra-popup__button {
@@ -432,7 +492,7 @@ p, li {
   color: #999;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.15s ease;
+  transition: color var(--dur-fast) var(--ease-standard);
 }
 
 .ra-popup__close:hover,
@@ -515,15 +575,6 @@ p, li {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .ra-popup,
-  .ra-popup__panel,
-  .ra-popup__button,
-  .ra-popup__ghost {
-    transition: none;
-  }
-}
-
 /* ── Values marquee ───────────────────────────────────────────────── */
 .values-marquee {
   overflow: hidden;
@@ -550,6 +601,14 @@ p, li {
   flex-direction: column;
   gap: 0.8rem;
   user-select: none;
+  transition:
+    border-color var(--dur-fast) var(--ease-standard),
+    background   var(--dur-fast) var(--ease-standard);
+}
+
+.values-card:hover {
+  border-color: #bbb;
+  background: #fafafa;
 }
 
 .values-card__icon {
@@ -632,5 +691,70 @@ p, li {
   .home-visit-map__scale {
     transform: scale(0.68);
     transform-origin: top center;
+  }
+}
+
+/* ── Page-load entrance animations ───────────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container.centered {
+  animation: fade-up var(--dur-enter) var(--ease-out) both;
+}
+
+.stacked-section:nth-child(1) {
+  animation: fade-up var(--dur-enter-slow) var(--ease-out) both;
+  animation-delay: 80ms;
+}
+.stacked-section:nth-child(2) {
+  animation: fade-up var(--dur-enter-slow) var(--ease-out) both;
+  animation-delay: 160ms;
+}
+.stacked-section:nth-child(3) {
+  animation: fade-up var(--dur-enter-slow) var(--ease-out) both;
+  animation-delay: 240ms;
+}
+.stacked-section:nth-child(4) {
+  animation: fade-up var(--dur-enter-slow) var(--ease-out) both;
+  animation-delay: 320ms;
+}
+.stacked-section:nth-child(5) {
+  animation: fade-up var(--dur-enter-slow) var(--ease-out) both;
+  animation-delay: 400ms;
+}
+
+/* ── prefers-reduced-motion — comprehensive override ─────────────── */
+@media (prefers-reduced-motion: reduce) {
+  /* Existing popup */
+  .ra-popup,
+  .ra-popup__panel,
+  .ra-popup__button,
+  .ra-popup__ghost {
+    transition: none;
+  }
+
+  /* Disable entrance animations */
+  .container.centered,
+  .stacked-section {
+    animation: none;
+  }
+
+  /* All remaining hover effects are opacity/color-only — no changes needed */
+
+  /* Nav underline: no wipe — show instantly on hover instead */
+  .navigation a.navigation-link::after {
+    transition: none;
+  }
+  .navigation a.navigation-link:hover::after,
+  .navigation a.navigation-link:focus-visible::after {
+    transform: scaleX(1);
   }
 }
