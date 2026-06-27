@@ -2,9 +2,9 @@ Hi! I'm Yuchen Ethan Shen, a B.S. student in Biomedical Informatics at Zhejiang 
 
 ### Education
 
-- **B.S. in Biomedical Informatics**, Zhejiang University (Sep 2023-Jun 2027)
+- **B.S. in Biomedical Informatics**, School of Medicine, Zhejiang University (Sep 2023-Jun 2027)
   - GPA 3.8/4.0; rank 3/58.
-- **B.S. in Biomedical Informatics**, University of Edinburgh (Sep 2025-Dec 2025)
+- **B.S. in Biomedical Informatics**, Edinburgh Medical School, University of Edinburgh (Sep 2025-Dec 2025)
   - Dual degree.
 
 ### Publications
