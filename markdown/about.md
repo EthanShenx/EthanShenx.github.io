@@ -8,6 +8,7 @@ Hi! I'm Yuchen Ethan Shen, a B.S. student in Biomedical Informatics at Zhejiang 
   - Dual degree.
 
 ### Publications
+- Ren, Y.<sup>†</sup>, <strong><u>Shen, Y.</u></strong><sup>†</sup>, Jin, L., Huang, Y., Deng, Y., Xiao, Y.<sup>*</sup>, Wang, C.<sup>*</sup> (Jul 2026). scSAID: A Comprehensive Cross-Species Single-Cell Skin Atlas Reveals Species-Specific Responses to Psoriasis. *bioRxiv*. doi: [10.64898/2026.07.20.739409](https://doi.org/10.64898/2026.07.20.739409).
 - Ge, Y., Zhang, F., Liu, Y., Jiang, C., Gao, P., Tan, N.S., Zhang, S., **Shen, Y.**, Zhou, Q., Zhou, X., Wang, C., Shen, X. (2025). Leveraging Large Language Models for Redundancy-Aware Pathway Analysis and Deep Biological Interpretation. bioRxiv preprint. doi: 10.1101/2025.08.23.671949.
 
 ### Honors and qualifications
