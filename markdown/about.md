@@ -1,4 +1,4 @@
-Hi! I'm Yuchen Ethan Shen, a B.S. student in Biomedical Informatics at Zhejiang University School of Medicine. I study how genetic, epigenetic modifications, and 3D chromatin regulation shape aging, cancer, and development by combining computational approaches of single-cell multi-omics and functional assays. I am especially interested stem cell niche regulation and stem cell fate decision in mammary gland biology and other biological systems.
+Hi! I'm Yuchen Shen, a B.S. student in Biomedical Informatics at Zhejiang University School of Medicine. I study how genetic, epigenetic modifications, and 3D chromatin regulation shape aging, cancer, and development by combining computational approaches of single-cell multi-omics and functional assays. I am especially interested stem cell niche regulation and stem cell fate decision in mammary gland biology and other biological systems.
 
 ### Education
 
