@@ -1,4 +1,8 @@
 <div class="software-logos">
+  <a href="https://github.com/EthanShenx/omakase" target="_blank" rel="noopener">
+    <img src="/images/omakase_logo.png" alt="omakase logo" />
+    <span><strong>omakase</strong> — Elegantly visualize alternative splicing events and differential genome coverage.</span>
+  </a>
   <a href="https://github.com/jaspershen-lab/mapa" target="_blank" rel="noopener">
     <img src="/images/mapa_logo.png" alt="MAPA logo" />
     <span><strong>mapa</strong> — Merges redundant enriched pathways for multi-omic data with LLM interpretation.</span>
