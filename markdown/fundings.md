@@ -1,0 +1,1 @@
+- **Xinmiao Talents Program of Zhejiang Province Grant** — Zhejiang Province. “Deciphering the Mechanism Underlying High-Fat Diet-Induced Pubertal Mammary Gland Developmental Defects.” (2024–2026). Awardee: <strong><u>Shen, Y.</u></strong> (leader), Ren, Y., Huang, Y., Wang, C. (supervisor).

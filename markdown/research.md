@@ -10,7 +10,7 @@ Role: Project leader
 - Identified Map2+Adam12+ fibroblasts as HFD-activated collagen producers
 - Mapped adipocyte–microenvironment crosstalk (pseudotime, CellChat)
 
-![Graphical abstract](/images/projects_graphical_abstract/Mammary_HFD.webp)
+<img src="/images/projects_graphical_abstract/Mammary_HFD.webp" alt="Graphical abstract" width="2000" height="2002">
 
 ### Chaochen Wang & Ying Xiao Labs — Zhejiang University
 
@@ -23,7 +23,7 @@ Role: Atlas constructor & UI designer & Web Function Implementer
 - Ran DEG, enrichment, communication, and GRN analyses in Scanpy
 - Designed responsive web UI for atlas exploration and custom dataset uploads
 
-![Graphical abstract](/images/projects_graphical_abstract/scSAID.webp)
+<img src="/images/projects_graphical_abstract/scSAID.webp" alt="Graphical abstract" width="2400" height="852">
 
 ### Xiaotao Shen Lab — Nanyang Technological University
 
@@ -35,7 +35,7 @@ Role: Software contributor & co-author
 - Co-authored interactive Quarto/Shiny tutorials to onboard users and document workflows
 - Published in *Advanced Science*: [doi:10.1002/advs.77774](https://doi.org/10.1002/advs.77774)
 
-![MAPA graphical abstract](/images/projects_graphical_abstract/mapa.webp)
+<img src="/images/projects_graphical_abstract/mapa.webp" alt="MAPA graphical abstract" width="1640" height="1219">
 
 ### Course Project — Biomedical Informatics 3
 
@@ -46,6 +46,6 @@ Role: Leader
 - Developed an HMM-based classifier for distinguishing nuclear vs. mitochondrial genes, with applications in genomic annotation and organelle biology research
 - Designed and optimized the model architecture and training pipeline using Python and HMM libraries
 
-![Graphical abstract](/images/projects_graphical_abstract/mitoSpotter.webp)
+<img src="/images/projects_graphical_abstract/mitoSpotter.webp" alt="Graphical abstract" width="2000" height="1085">
 
-![Graphical abstract](/images/projects_graphical_abstract/benchmark.webp)
+<img src="/images/projects_graphical_abstract/benchmark.webp" alt="Graphical abstract" width="2400" height="1053">

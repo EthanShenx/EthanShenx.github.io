@@ -15,6 +15,7 @@ Hi! I'm Yuchen Shen, a B.S. student in Biomedical Informatics at Zhejiang Univer
 - ZJE Academic Scholarship Second Prize (2024 - 2025)
 - Zhejiang University Scholarship Third Prize (2025 - 2026)
 - ZJE Academic Scholarship Second Prize (2025 - 2026)
+- ZJE Overseas Exchange Scholarship (2025 - 2026)
 - IELTS Academic 8.0 (Listening 9.0, Reading 9.0, Writing 7.0, Speaking 7.0), Aug 2025
 
 ### Language

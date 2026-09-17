@@ -41,10 +41,18 @@
       links.set(h, li);
     });
 
-    document.body.appendChild(nav);
+    // Lives inside the article so CSS can lay it out as a sticky side column
+    // (desktop) or a sticky strip under the page title (mobile).
+    body.parentNode.insertBefore(nav, body);
+    body.parentNode.classList.add('has-timeline');
 
     function setActive(h) {
       links.forEach((li, key) => li.classList.toggle('is-active', key === h));
+      const li = links.get(h);
+      if (list.scrollWidth > list.clientWidth && li) {
+        const offset = li.getBoundingClientRect().left - list.getBoundingClientRect().left;
+        list.scrollTo({ left: Math.max(0, list.scrollLeft + offset), behavior: 'auto' });
+      }
     }
 
     // Active section = last heading scrolled past the upper third of the viewport.
