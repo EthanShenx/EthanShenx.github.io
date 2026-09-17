@@ -1,3 +1,5 @@
+<!-- timeline: Mammary gland niche | Hangzhou -->
+
 ### Chaochen Wang Lab — Zhejiang University
 
 **High-Fat Diet Impact on Mammary Gland Development**
@@ -12,6 +14,8 @@ Role: Project leader
 
 <img src="/images/projects_graphical_abstract/Mammary_HFD.webp" alt="Graphical abstract" width="2000" height="2002">
 
+<!-- timeline: scSAID | Hangzhou -->
+
 ### Chaochen Wang & Ying Xiao Labs — Zhejiang University
 
 **Skin scRNA-seq Database Project (scSAID)**
@@ -25,6 +29,8 @@ Role: Atlas constructor & UI designer & Web Function Implementer
 
 <img src="/images/projects_graphical_abstract/scSAID.webp" alt="Graphical abstract" width="2400" height="852">
 
+<!-- timeline: MAPA | Singapore -->
+
 ### Xiaotao Shen Lab — Nanyang Technological University
 
 **MAPA: A Semantic Network Framework for Functional Module Discovery and Interpretation in Multi-Omics Data**
@@ -36,6 +42,8 @@ Role: Software contributor & co-author
 - Published in *Advanced Science*: [doi:10.1002/advs.77774](https://doi.org/10.1002/advs.77774)
 
 <img src="/images/projects_graphical_abstract/mapa.webp" alt="MAPA graphical abstract" width="1640" height="1219">
+
+<!-- timeline: mitoSpotter | Hangzhou -->
 
 ### Course Project — Biomedical Informatics 3
 

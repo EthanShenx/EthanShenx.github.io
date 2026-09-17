@@ -864,27 +864,30 @@ p, li {
     min-width: 0;
   }
 
+  /* Pinned to the viewport's vertical center, flush with the right edge
+     of the page column; the grid keeps its column free. */
   article.has-timeline > .research-timeline {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    align-self: start;
-    position: sticky;
-    top: 3rem;
-    margin-top: 2rem;
+    position: fixed;
+    top: 50%;
+    right: max(2rem, calc((100vw - 118rem) / 2 + 2rem));
+    width: 20rem;
+    transform: translateY(-50%);
+    text-align: right;
+    z-index: 10;
   }
 
   .research-timeline ol {
-    border-left: 2px solid var(--timeline-line);
+    border-right: 2px solid var(--timeline-line);
   }
 
   .research-timeline li {
-    padding: 0.6rem 0 0.6rem 1.6rem;
+    padding: 0.6rem 1.6rem 0.6rem 0;
   }
 
   .research-timeline li::before {
     content: "";
     position: absolute;
-    left: -6px;
+    right: -6px;
     top: 1.05rem;
     width: 10px;
     height: 10px;
@@ -963,14 +966,14 @@ p, li {
    the viewport slides from the top of the photo toward the bottom. */
 .home-hero {
   --hero-speed: 0.4;       /* photo speed relative to scroll (0 = static) */
-  --hero-focus: 35% 0%;    /* crop anchor: horizontal focus, top edge */
+  --hero-focus: 50% 50%;   /* crop anchor: center of the circular figure */
   --hero-overscale: 1.08;  /* guards against edges during the move */
   --hero-ink: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 62vh;
+  min-height: 62svh;
   overflow: hidden;
   isolation: isolate;
   color: var(--hero-ink);
@@ -982,6 +985,11 @@ p, li {
   inset: 0;
   z-index: -2;
   overflow: hidden;
+}
+
+.home-hero__media picture {
+  display: block;
+  height: 100%;
 }
 
 .home-hero__media img {
@@ -1050,7 +1058,7 @@ p, li {
 @media only screen and (max-width: 768px) {
   .home-hero {
     --hero-speed: 0.25;
-    --hero-focus: 18% 0%;  /* left panel: row labels and bars */
+    --hero-focus: 50% 50%;
     --hero-overscale: 1.12;
   }
 

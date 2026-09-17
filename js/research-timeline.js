@@ -5,6 +5,16 @@
     return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   }
 
+  function timelineComment(heading) {
+    for (let node = heading.previousSibling; node; node = node.previousSibling) {
+      if (node.nodeType === Node.ELEMENT_NODE) return null;
+      if (node.nodeType !== Node.COMMENT_NODE) continue;
+      const m = node.data.match(/^\s*timeline:\s*(.*?)\s*\|\s*(.*?)\s*$/);
+      if (m) return [m[1], m[2]];
+    }
+    return null;
+  }
+
   function build(body) {
     const headings = Array.from(body.querySelectorAll('h3'));
     if (!headings.length) return;
@@ -20,9 +30,13 @@
       // Project title is the bold line right after the lab heading.
       const next = h.nextElementSibling;
       const strong = next && next.querySelector('strong');
-      const project = strong ? strong.textContent.split(':')[0].trim() : h.textContent;
-      const lab = h.textContent.split('—')[0].trim();
-      if (!h.id) h.id = slugify(project);
+      const fullTitle = strong ? strong.textContent.split(':')[0].trim() : h.textContent;
+      if (!h.id) h.id = slugify(fullTitle);
+
+      // Optional short label from a preceding "<!-- timeline: Title | Subtitle -->".
+      const custom = timelineComment(h);
+      const project = custom ? custom[0] : fullTitle;
+      const lab = custom ? custom[1] : h.textContent.split('—')[0].trim();
 
       const li = document.createElement('li');
       const a = document.createElement('a');
