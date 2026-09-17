@@ -27,14 +27,15 @@ Role: Atlas constructor & UI designer & Web Function Implementer
 
 ### Xiaotao Shen Lab — Nanyang Technological University
 
-**Enrichment Simplification (MAPA R package)**
+**MAPA: A Semantic Network Framework for Functional Module Discovery and Interpretation in Multi-Omics Data**
 
-Role: Software contributor
+Role: Software contributor & co-author
 
-- Comtributed to redundancy-aware pathway analysis toolkit
-- Co-authored interactive Quarto/Shiny tutorials to onboard users and document workflows.
+- Contributed to a semantic-biological network framework for discovering and interpreting functional modules across omics layers
+- Co-authored interactive Quarto/Shiny tutorials to onboard users and document workflows
+- Published in *Advanced Science*: [doi:10.1002/advs.77774](https://doi.org/10.1002/advs.77774)
 
-![Graphical abstract](/images/projects_graphical_abstract/mapa.png)
+![MAPA graphical abstract](/images/projects_graphical_abstract/mapa.png)
 
 ### Course Project — Biomedical Informatics 3
 

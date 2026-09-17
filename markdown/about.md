@@ -9,7 +9,7 @@ Hi! I'm Yuchen Shen, a B.S. student in Biomedical Informatics at Zhejiang Univer
 
 ### Publications
 - Ren, Y.<sup>†</sup>, <strong><u>Shen, Y.</u></strong><sup>†</sup>, Jin, L., Huang, Y., Deng, Y., Xiao, Y.<sup>*</sup>, Wang, C.<sup>*</sup> (Jul 2026). scSAID: A Comprehensive Cross-Species Single-Cell Skin Atlas Reveals Species-Specific Responses to Psoriasis. *bioRxiv*. doi: [10.64898/2026.07.20.739409](https://doi.org/10.64898/2026.07.20.739409).
-- Ge, Y., Zhang, F., Liu, Y., Jiang, C., Gao, P., Tan, N.S., Zhang, S., **Shen, Y.**, Zhou, Q., Zhou, X., Wang, C., Shen, X. (2025). Leveraging Large Language Models for Redundancy-Aware Pathway Analysis and Deep Biological Interpretation. bioRxiv preprint. doi: [10.1101/2025.08.23.671949](https://doi.org/10.1101/2025.08.23.671949).
+- Yifei Ge, Feifan Zhang, Yijiang Liu, Chao Jiang, Peng Gao, Nguan Soon Tan, Sai Zhang, <strong><u>Yuchen Shen</u></strong>, Qianyi Zhou, Xin Zhou, Xiao Wang, Fangqing Zhao, Chuchu Wang, Xiaotao Shen (Sep 2026). MAPA: A Semantic Network Framework for Functional Module Discovery and Interpretation in Multi-Omics Data. *Advanced Science*. doi: [10.1002/advs.77774](https://doi.org/10.1002/advs.77774).
 
 ### Honors and qualifications
 
