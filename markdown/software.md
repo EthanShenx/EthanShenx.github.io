@@ -1,7 +1,7 @@
 <div class="software-logos">
   <a href="https://github.com/jaspershen-lab/mapa" target="_blank" rel="noopener">
     <img src="/images/mapa_logo.png" alt="MAPA logo" />
-    <span><strong>mapa</strong> — A semantic-biological network framework for functional module discovery and interpretation in single- and multi-omics data.</span>
+    <span><strong>mapa</strong> — A semantic algorithm for functional module discovery and interpretation in multi-omics data.</span>
   </a>
   <a href="https://github.com/EthanShenx/omakase" target="_blank" rel="noopener">
     <img src="/images/omakase_logo.png" alt="omakase logo" />

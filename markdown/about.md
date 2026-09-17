@@ -4,8 +4,6 @@ Hi! I'm Yuchen Shen, a B.S. student in Biomedical Informatics at Zhejiang Univer
 
 - **B.S. in Biomedical Informatics**, School of Medicine, Zhejiang University (Sep 2023-Jun 2027)
   - GPA: 3.8/4.0; Rank: 2/54.
-- **B.S. in Biomedical Informatics**, Edinburgh Medical School, University of Edinburgh (Sep 2025-Dec 2025)
-  - Dual degree.
 
 ### Publications
 - Ren, Y.<sup>†</sup>, <strong><u>Shen, Y.</u></strong><sup>†</sup>, Jin, L., Huang, Y., Deng, Y., Xiao, Y.<sup>*</sup>, Wang, C.<sup>*</sup> (Jul 2026). scSAID: A Comprehensive Cross-Species Single-Cell Skin Atlas Reveals Species-Specific Responses to Psoriasis. *bioRxiv*. doi: [10.64898/2026.07.20.739409](https://doi.org/10.64898/2026.07.20.739409).

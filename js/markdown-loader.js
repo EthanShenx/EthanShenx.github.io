@@ -23,6 +23,12 @@
       })
       .then((md) => {
         el.innerHTML = marked.parse(md);
+        // Only the first image may be above the fold; defer the rest.
+        el.querySelectorAll('img').forEach((img, i) => {
+          img.decoding = 'async';
+          if (i > 0) img.loading = 'lazy';
+        });
+        el.dispatchEvent(new CustomEvent('markdown:loaded', { bubbles: true }));
       })
       .catch((err) => {
         console.error('Markdown load failed:', err);
