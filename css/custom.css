@@ -939,3 +939,125 @@ p, li {
 @media (prefers-reduced-motion: reduce) {
   .research-timeline li::before { transition: none; }
 }
+
+/* ── Home hero: scroll-driven photo reveal ────────────────────────── */
+/* The photo layer is shifted down by --hero-shift (set by
+   js/hero-parallax.js), so it moves slower than the page and the top of
+   the viewport slides from the top of the photo toward the bottom. */
+.home-hero {
+  --hero-speed: 0.4;       /* photo speed relative to scroll (0 = static) */
+  --hero-focus: 35% 0%;    /* crop anchor: horizontal focus, top edge */
+  --hero-overscale: 1.08;  /* guards against edges during the move */
+  --hero-ink: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--hero-ink);
+  background: #10141c;
+}
+
+.home-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.home-hero__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: var(--hero-focus);
+  transform: translate3d(0, var(--hero-shift, 0px), 0) scale(var(--hero-overscale));
+  transform-origin: var(--hero-focus);
+  will-change: transform;
+}
+
+.home-hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg,
+      rgba(10, 14, 22, 0.78) 0%,
+      rgba(10, 14, 22, 0.58) 22%,
+      rgba(10, 14, 22, 0.58) 70%,
+      rgba(10, 14, 22, 0.82) 100%);
+}
+
+.home-hero .navigation {
+  position: relative;
+  z-index: 20;
+}
+
+.home-hero__intro.container {
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.wrapper > .home-hero .about h1,
+.wrapper > .home-hero .about h2,
+.wrapper > .home-hero .about ul li a {
+  color: var(--hero-ink);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.wrapper > .home-hero .avatar img {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Light nav text over the photo; the mobile dropdown keeps its own panel colors */
+.wrapper > .home-hero .navigation-title,
+.wrapper > .home-hero .navigation .menu-button i {
+  color: var(--hero-ink);
+}
+
+@media only screen and (min-width: 769px) {
+  .wrapper > .home-hero .navigation,
+  .wrapper > .home-hero .navigation a,
+  .wrapper > .home-hero .navigation span,
+  .wrapper > .home-hero .navigation i {
+    color: var(--hero-ink);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-hero {
+    --hero-speed: 0.25;
+    --hero-focus: 18% 0%;  /* left panel: row labels and bars */
+    --hero-overscale: 1.12;
+  }
+
+  .home-hero__scrim {
+    background:
+      linear-gradient(180deg,
+        rgba(10, 14, 22, 0.8) 0%,
+        rgba(10, 14, 22, 0.66) 30%,
+        rgba(10, 14, 22, 0.66) 75%,
+        rgba(10, 14, 22, 0.85) 100%);
+  }
+
+  .home-hero__intro.container {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero {
+    --hero-speed: 0;
+  }
+
+  .home-hero__media img {
+    transform: scale(var(--hero-overscale));
+    will-change: auto;
+  }
+}
