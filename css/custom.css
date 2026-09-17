@@ -1093,7 +1093,7 @@ p, li {
   --rail-accent: #1565c0;
   position: fixed;
   top: 50%;
-  left: max(2rem, calc((100vw - 90rem) / 2 - 16rem));
+  left: max(3.2rem, calc((100vw - 90rem) / 2 - 26rem));
   z-index: 30;
   display: none;
   transform: translate(-0.8rem, -50%);
@@ -1162,7 +1162,7 @@ p, li {
 /* Research page is wider (118rem); keep the rail clear of its content,
    and below 1500px only the icons fit in the margin */
 body:has(.has-timeline) .nav-rail {
-  left: max(1.6rem, calc((100vw - 118rem) / 2 - 11rem));
+  left: max(1.6rem, calc((100vw - 118rem) / 2 - 16rem));
 }
 
 @media (max-width: 1499px) {
