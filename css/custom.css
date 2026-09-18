@@ -170,6 +170,7 @@ p, li {
   flex-wrap: wrap;
   gap: 16px;
   align-items: center;
+  justify-content: center;
 }
 .software-logos img {
   max-height: 96px;
