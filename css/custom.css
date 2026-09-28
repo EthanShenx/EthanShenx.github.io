@@ -1208,6 +1208,17 @@ p, li {
   padding-bottom: 6rem;
 }
 
+.home-hero__signature-title {
+  display: flex;
+  justify-content: center;
+}
+
+.home-hero__signature-title img {
+  display: block;
+  width: min(20rem, 56vw);
+  height: auto;
+}
+
 .home-hero__role {
   display: flex;
   flex-direction: column;
