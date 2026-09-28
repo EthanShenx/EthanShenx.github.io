@@ -9,6 +9,16 @@ const DEFAULT_WORDS = [
 ];
 const DEFAULT_INTERVAL = 1350;
 const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
+const WORD_STYLE_CLASSES = {
+  Bioinformatician: "word-rotate__word--bioinformatics",
+  "Genome Scientist": "word-rotate__word--genome",
+  "A Final-Year Undergrad": "word-rotate__word--undergrad",
+  "Computational Biologist": "word-rotate__word--computational",
+};
+
+function getWordClassName(word, baseClassName) {
+  return [baseClassName, WORD_STYLE_CLASSES[word]].filter(Boolean).join(" ");
+}
 
 export function WordRotate({
   words = DEFAULT_WORDS,
@@ -49,7 +59,10 @@ export function WordRotate({
         <span className="word-rotate__sizer" aria-hidden="true">
           {safeWords.map((candidate, candidateIndex) => (
             <span
-              className="word-rotate__sizer-word"
+              className={getWordClassName(
+                candidate,
+                "word-rotate__sizer-word",
+              )}
               key={`${candidate}-${candidateIndex}`}
             >
               {candidate}
@@ -58,7 +71,7 @@ export function WordRotate({
         </span>
         <AnimatePresence initial={false} mode="sync">
           <motion.span
-            className="word-rotate__word"
+            className={getWordClassName(word, "word-rotate__word")}
             key={word}
             initial={initialState}
             animate={{ opacity: 1, y: 0 }}
