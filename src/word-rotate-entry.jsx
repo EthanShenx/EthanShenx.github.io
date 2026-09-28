@@ -12,6 +12,7 @@ if (mountNode) {
           "Bioinformatician",
           "Genome Scientist",
           "Final-Year Undergrad",
+          "Computational Biologist",
         ]}
       />
     </MotionConfig>,

@@ -5,6 +5,7 @@ const DEFAULT_WORDS = [
   "Bioinformatician",
   "Genome Scientist",
   "Final-Year Undergrad",
+  "Computational Biologist",
 ];
 const DEFAULT_INTERVAL = 1500;
 const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
