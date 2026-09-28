@@ -240,6 +240,135 @@ p, li {
   }
 }
 
+/* ── Publication entries ──────────────────────────────────────────── */
+.publication-list {
+  display: grid;
+}
+
+.publication-entry {
+  padding: 2rem 0 2.2rem;
+  border-top: 1px solid rgba(113, 113, 122, 0.24);
+}
+
+.publication-entry:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.markdown-body .publication-title {
+  margin: 0 0 0.7rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.publication-authors,
+.publication-meta {
+  text-align: left !important;
+}
+
+.publication-authors {
+  margin: 0 0 0.45rem;
+  font-size: 1.55rem;
+  line-height: 1.65;
+}
+
+.publication-meta {
+  margin: 0 0 1.2rem;
+  color: #71717a;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.publication-links > a:not(.publication-link) {
+  display: none !important;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.4rem;
+  height: 4.6rem;
+  padding: 0.55rem 1rem;
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(24, 24, 27, 0.04);
+  transition:
+    border-color var(--dur-fast) var(--ease-standard),
+    box-shadow var(--dur-fast) var(--ease-standard),
+    transform var(--dur-fast) var(--ease-standard);
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  border-color: #a1a1aa;
+  box-shadow: 0 3px 9px rgba(24, 24, 27, 0.1);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.publication-link:focus-visible {
+  outline: 2px solid #3f3f46;
+  outline-offset: 2px;
+}
+
+.publication-link img {
+  display: block;
+  width: auto;
+  max-width: 10.4rem;
+  object-fit: contain;
+}
+
+.content article .publication-link::after {
+  content: none;
+  padding: 0;
+}
+
+.publication-link--biorxiv img {
+  max-height: 2.6rem;
+}
+
+.publication-link--pubmed img {
+  max-height: 2.8rem;
+}
+
+.publication-link--advanced-science img {
+  max-height: 3.2rem;
+}
+
+.colorscheme-dark .publication-meta {
+  color: #a1a1aa;
+}
+
+@media only screen and (max-width: 480px) {
+  .publication-link {
+    width: calc(50% - 0.4rem);
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-link {
+    transition: none;
+  }
+
+  .publication-link:hover,
+  .publication-link:focus-visible {
+    transform: none;
+  }
+}
+
 /* Hide About link in the header without removing the page */
 .navigation a[href="/about/"],
 .navigation a[href="/about"],
