@@ -177,6 +177,33 @@ p, li {
   width: auto;
   display: block;
 }
+.software-logo-button {
+  position: relative;
+  display: inline-grid;
+  overflow: hidden;
+  line-height: 0;
+  isolation: isolate;
+}
+.software-logo-ripple {
+  position: absolute;
+  z-index: 1;
+  width: var(--software-ripple-size);
+  height: var(--software-ripple-size);
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.35;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  animation: software-logo-ripple 0.6s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes software-logo-ripple {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
 .software-logos a {
   display: flex;
   flex-direction: column;
@@ -197,7 +224,7 @@ p, li {
   text-decoration: none;
   opacity: 0.6;
 }
-.software-logos span {
+.software-logo-copy {
   display: block;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -205,6 +232,12 @@ p, li {
 }
 .software-logos strong {
   font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .software-logo-ripple {
+    animation-duration: 1ms;
+  }
 }
 
 /* Hide About link in the header without removing the page */
