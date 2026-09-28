@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 const COLUMN_WIDTH = 14;
 const ROW_HEIGHT = 12;
-const FONT_SIZE = 10;
+const FONT_SIZE = 12;
 const ACTIVE_COLUMN_RATIO = 0.6;
 const MIN_ROWS_PER_SECOND = 1.5;
 const MAX_ROWS_PER_SECOND = 3;
@@ -113,8 +113,8 @@ export function MatrixRain() {
         const nextRow = Math.floor(column.row);
 
         if (nextRow > column.lastDrawnRow) {
-          drawGlyph(columnIndex, nextRow - 1, "rgba(113, 113, 122, 0.9)");
-          drawGlyph(columnIndex, nextRow, "rgba(244, 244, 245, 0.8)");
+          drawGlyph(columnIndex, nextRow - 1, "rgba(212, 212, 216, 0.72)");
+          drawGlyph(columnIndex, nextRow, "rgba(250, 250, 250, 0.92)");
           column.lastDrawnRow = nextRow;
         }
 
