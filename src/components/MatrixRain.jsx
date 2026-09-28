@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
-const COLUMN_WIDTH = 18;
-const ROW_HEIGHT = 18;
-const FONT_SIZE = 14;
+const COLUMN_WIDTH = 20;
+const ROW_HEIGHT = 20;
+const FONT_SIZE = 16;
 const ACTIVE_COLUMN_RATIO = 0.6;
 const MIN_ROWS_PER_SECOND = 1.5;
 const MAX_ROWS_PER_SECOND = 3;
