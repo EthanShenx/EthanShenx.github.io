@@ -8,3 +8,6 @@ static/notes/IBI1-Introduction to Bioinformatics.pdf
 
 # macOS
 .DS_Store
+
+# JavaScript dependencies
+node_modules/
