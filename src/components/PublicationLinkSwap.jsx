@@ -5,7 +5,8 @@ export function PublicationLinkSwap({ imageSrc }) {
         <img src={imageSrc} alt="" />
       </span>
       <span className="publication-link__label publication-link__label--read">
-        Read
+        <span>Read</span>
+        <span className="publication-link__arrow">→</span>
       </span>
     </span>
   );

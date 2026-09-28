@@ -244,14 +244,11 @@ p, li {
 /* ── Publication entries ──────────────────────────────────────────── */
 .publication-list {
   display: grid;
+  row-gap: 5.6rem;
 }
 
 .publication-entry {
-  padding: 2rem 0 2.2rem;
-}
-
-.publication-entry:first-child {
-  padding-top: 0;
+  padding: 0;
 }
 
 .markdown-body .publication-title {
@@ -296,7 +293,7 @@ p, li {
   align-items: flex-start;
   justify-content: center;
   width: 12.4rem;
-  height: 4.6rem;
+  height: 3.8rem;
   padding: 0;
   overflow: hidden;
   border: 1px solid #e4e4e7;
@@ -339,10 +336,16 @@ p, li {
 }
 
 .publication-link__label--read {
+  gap: 0.6rem;
   color: #27272a;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.025em;
+}
+
+.publication-link__arrow {
+  font-size: 1.55rem;
+  line-height: 1;
 }
 
 .publication-link img {
