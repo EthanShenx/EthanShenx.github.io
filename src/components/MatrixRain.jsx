@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 const COLUMN_WIDTH = 20;
 const ROW_HEIGHT = 20;
 const FONT_SIZE = 16;
-const ACTIVE_COLUMN_RATIO = 0.6;
+const ACTIVE_COLUMN_RATIO = 0.8;
 const MIN_ROWS_PER_SECOND = 1.5;
 const MAX_ROWS_PER_SECOND = 3;
 const GLYPH_FONT = `500 ${FONT_SIZE}px "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", monospace`;
