@@ -11,7 +11,7 @@ Hi! I'm Yuchen Shen, a B.S. student in Biomedical Informatics at Zhejiang Univer
   <article class="publication-entry">
     <h3 class="publication-title"><strong>scSAID: A Comprehensive Cross-Species Single-Cell Skin Atlas Reveals Species-Specific Responses to Psoriasis</strong></h3>
     <p class="publication-authors">Ren, Y.<sup>†</sup>, <strong><u>Shen, Y.</u></strong><sup>†</sup>, Jin, L., Huang, Y., Deng, Y., Xiao, Y.<sup>*</sup>, Wang, C.<sup>*</sup></p>
-    <p class="publication-meta"><time datetime="2026-07">Jul 2026</time> · <em>bioRxiv</em> · Co-first author</p>
+    <p class="publication-meta"><time datetime="2026-07">Jul 2026</time> · <em>bioRxiv</em></p>
     <div class="publication-links" aria-label="Links for scSAID">
       <a class="publication-link publication-link--biorxiv" href="https://www.biorxiv.org/content/10.64898/2026.07.20.739409v1" target="_blank" rel="noopener noreferrer" aria-label="Read scSAID on bioRxiv">
         <img src="/images/Journals/BioRxiv_logo.png" alt="bioRxiv" />
