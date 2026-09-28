@@ -1,7 +1,6 @@
-// Home hero photo reveal: while the header scrolls out of view, the photo
-// layer drifts down at a fraction of the scroll speed, so it moves slower
-// than the page and the visible window slides from the top of the photo
-// toward the bottom. Speed/crop per breakpoint live in CSS (--hero-speed).
+// Home hero depth: while the header scrolls out of view, the visual layer
+// drifts down at a fraction of the scroll speed so it moves slower than the
+// page. Speed per breakpoint lives in CSS (--hero-speed).
 (function () {
   const hero = document.querySelector('[data-hero-parallax]');
   if (!hero) return;
@@ -21,7 +20,7 @@
   }
 
   function computeTarget() {
-    // Clamp to the header's own scroll range so the photo never loops or
+    // Clamp to the header's own scroll range so the visual never loops or
     // overshoots once the header has left the viewport.
     const progress = Math.min(Math.max(window.scrollY, 0), heroHeight);
     return progress * speed;
