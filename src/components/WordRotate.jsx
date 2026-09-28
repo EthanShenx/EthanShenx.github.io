@@ -1,8 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
-const DEFAULT_WORDS = ["Bioinfomatician", "Genome Scientist"];
-const DEFAULT_INTERVAL = 2000;
+const DEFAULT_WORDS = [
+  "Bioinformatician",
+  "Genome Scientist",
+  "Final-Year Undergrad",
+];
+const DEFAULT_INTERVAL = 1500;
 const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
 
 export function WordRotate({

@@ -7,7 +7,13 @@ const mountNode = document.getElementById("word-rotate-root");
 if (mountNode) {
   createRoot(mountNode).render(
     <MotionConfig reducedMotion="user">
-      <WordRotate words={["Bioinfomatician", "Genome Scientist"]} />
+      <WordRotate
+        words={[
+          "Bioinformatician",
+          "Genome Scientist",
+          "Final-Year Undergrad",
+        ]}
+      />
     </MotionConfig>,
   );
 }
