@@ -24,3 +24,7 @@
     <span class="software-logo-copy"><strong>psoSpotter</strong> — Minimally viable gene panel algorithm for sensitive disease biomarker detection.</span>
   </a>
 </div>
+
+<div id="github-calendar-root" class="github-calendar-root">
+  <p class="github-contributions__loading">Loading GitHub contributions…</p>
+</div>

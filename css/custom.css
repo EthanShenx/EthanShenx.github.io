@@ -245,6 +245,96 @@ p, li {
   }
 }
 
+/* ── GitHub contributions ────────────────────────────────────────── */
+.github-calendar-root {
+  margin-top: 4rem;
+}
+
+.github-contributions__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.markdown-body .github-contributions__header h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.markdown-body .github-contributions__profile {
+  flex: 0 0 auto;
+  color: #52525b;
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+
+.markdown-body .github-contributions__profile:hover,
+.markdown-body .github-contributions__profile:focus-visible {
+  color: #18181b;
+  text-decoration: none;
+}
+
+.github-contributions__calendar {
+  overflow-x: auto;
+  padding: 1.6rem;
+  border: 1px solid #e4e4e7;
+  background: #fff;
+  color: #3f3f46;
+  scrollbar-width: thin;
+  scrollbar-color: #a1a1aa transparent;
+}
+
+.github-contributions__calendar:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.github-contributions__calendar article {
+  min-width: max-content;
+}
+
+.github-contributions__loading {
+  margin: 0;
+  color: #71717a;
+  font-size: 1.4rem;
+}
+
+.colorscheme-dark .github-contributions__calendar {
+  border-color: #3f3f46;
+  background: #18181b;
+  color: #d4d4d8;
+  scrollbar-color: #71717a transparent;
+}
+
+.colorscheme-dark .markdown-body .github-contributions__profile {
+  color: #a1a1aa;
+}
+
+.colorscheme-dark .markdown-body .github-contributions__profile:hover,
+.colorscheme-dark .markdown-body .github-contributions__profile:focus-visible {
+  color: #f4f4f5;
+}
+
+@media (max-width: 600px) {
+  .github-calendar-root {
+    margin-top: 3.2rem;
+  }
+
+  .github-contributions__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .github-contributions__calendar {
+    padding: 1.2rem;
+  }
+}
+
 /* ── Publication entries ──────────────────────────────────────────── */
 .publication-list {
   display: grid;

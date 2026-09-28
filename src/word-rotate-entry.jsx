@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { MotionConfig } from "framer-motion";
+import { GitHubContributions } from "./components/GitHubContributions";
 import { MatrixRain } from "./components/MatrixRain";
 import { PublicationLinkSwap } from "./components/PublicationLinkSwap";
 import { WordRotate } from "./components/WordRotate";
@@ -21,11 +22,24 @@ function mountPublicationLinks(scope = document) {
   });
 }
 
+function mountGitHubContributions(scope = document) {
+  const calendar = scope.querySelector(
+    "#github-calendar-root:not([data-react-mounted])",
+  );
+
+  if (!calendar) return;
+
+  calendar.dataset.reactMounted = "true";
+  createRoot(calendar).render(<GitHubContributions />);
+}
+
 document.addEventListener("markdown:loaded", (event) => {
   mountPublicationLinks(event.target);
+  mountGitHubContributions(event.target);
 });
 
 mountPublicationLinks();
+mountGitHubContributions();
 
 if (matrixRainMountNode) {
   createRoot(matrixRainMountNode).render(<MatrixRain />);
