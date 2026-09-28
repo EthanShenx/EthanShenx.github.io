@@ -11,7 +11,7 @@ if (mountNode) {
         words={[
           "Bioinformatician",
           "Genome Scientist",
-          "Final-Year Undergrad",
+          "A Final-Year Undergrad",
           "Computational Biologist",
         ]}
       />

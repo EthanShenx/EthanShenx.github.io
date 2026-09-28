@@ -1043,10 +1043,6 @@ p, li {
   white-space: nowrap;
 }
 
-.word-rotate__prefix {
-  margin-right: 0.28em;
-}
-
 .word-rotate__viewport {
   display: inline-grid;
   position: relative;

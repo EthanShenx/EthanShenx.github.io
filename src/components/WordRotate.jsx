@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 const DEFAULT_WORDS = [
   "Bioinformatician",
   "Genome Scientist",
-  "Final-Year Undergrad",
+  "A Final-Year Undergrad",
   "Computational Biologist",
 ];
 const DEFAULT_INTERVAL = 1500;
@@ -40,7 +40,6 @@ export function WordRotate({
 
   return (
     <span className="word-rotate">
-      <span className="word-rotate__prefix">I am a</span>
       <button
         className="word-rotate__viewport"
         type="button"
