@@ -7,7 +7,7 @@ const DEFAULT_WORDS = [
   "A Final-Year Undergrad",
   "Computational Biologist",
 ];
-const DEFAULT_INTERVAL = 1500;
+const DEFAULT_INTERVAL = 1350;
 const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
 
 export function WordRotate({

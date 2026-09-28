@@ -1113,6 +1113,8 @@ p, li {
 
 .word-rotate__word {
   align-self: start;
+  justify-self: center;
+  text-align: center;
   will-change: transform, opacity;
 }
 
