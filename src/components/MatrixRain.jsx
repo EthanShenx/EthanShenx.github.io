@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
-const COLUMN_WIDTH = 14;
-const ROW_HEIGHT = 12;
-const FONT_SIZE = 12;
+const COLUMN_WIDTH = 18;
+const ROW_HEIGHT = 18;
+const FONT_SIZE = 14;
 const ACTIVE_COLUMN_RATIO = 0.6;
 const MIN_ROWS_PER_SECOND = 1.5;
 const MAX_ROWS_PER_SECOND = 3;
@@ -18,13 +18,15 @@ function randomGlyph() {
   return GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
 }
 
-function createActiveColumn(rowCount) {
-  const row = -randomBetween(1, Math.max(rowCount, 2));
+function createActiveColumn(rowCount, startInView = false) {
+  const row = startInView
+    ? randomBetween(0, Math.max(rowCount - 1, 1))
+    : -randomBetween(1, Math.max(rowCount, 2));
 
   return {
     active: true,
     row,
-    lastDrawnRow: Math.floor(row),
+    lastDrawnRow: Math.floor(row) - (startInView ? 1 : 0),
     rowsPerSecond: randomBetween(MIN_ROWS_PER_SECOND, MAX_ROWS_PER_SECOND),
   };
 }
@@ -32,7 +34,7 @@ function createActiveColumn(rowCount) {
 function createColumns(columnCount, rowCount) {
   return Array.from({ length: columnCount }, () =>
     Math.random() < ACTIVE_COLUMN_RATIO
-      ? createActiveColumn(rowCount)
+      ? createActiveColumn(rowCount, true)
       : { active: false },
   );
 }
@@ -113,8 +115,8 @@ export function MatrixRain() {
         const nextRow = Math.floor(column.row);
 
         if (nextRow > column.lastDrawnRow) {
-          drawGlyph(columnIndex, nextRow - 1, "rgba(212, 212, 216, 0.72)");
-          drawGlyph(columnIndex, nextRow, "rgba(250, 250, 250, 0.92)");
+          drawGlyph(columnIndex, nextRow - 1, "rgba(228, 228, 231, 0.88)");
+          drawGlyph(columnIndex, nextRow, "rgba(255, 255, 255, 0.98)");
           column.lastDrawnRow = nextRow;
         }
 
