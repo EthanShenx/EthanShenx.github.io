@@ -244,7 +244,7 @@ p, li {
 /* ── Publication entries ──────────────────────────────────────────── */
 .publication-list {
   display: grid;
-  row-gap: 5.6rem;
+  row-gap: 4.8rem;
 }
 
 .publication-entry {
@@ -258,22 +258,20 @@ p, li {
   line-height: 1.4;
 }
 
-.publication-authors,
-.publication-meta {
+.publication-authors {
   text-align: left !important;
 }
 
 .publication-authors {
-  margin: 0 0 0.45rem;
+  margin: 0 0 1.2rem;
   font-size: 1.55rem;
   line-height: 1.65;
 }
 
-.publication-meta {
-  margin: 0 0 1.2rem;
+.publication-date {
+  white-space: nowrap;
   color: #71717a;
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 0.94em;
 }
 
 .publication-links {
@@ -372,7 +370,7 @@ p, li {
   max-height: 3.2rem;
 }
 
-.colorscheme-dark .publication-meta {
+.colorscheme-dark .publication-date {
   color: #a1a1aa;
 }
 
