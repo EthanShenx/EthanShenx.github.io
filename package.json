@@ -8,8 +8,8 @@
   "dependencies": {
     "framer-motion": "^13.4.4",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0",
-    "react-github-calendar": "^5.0.9"
+    "react-activity-calendar": "^3.2.1",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"
