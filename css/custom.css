@@ -245,6 +245,56 @@ p, li {
   }
 }
 
+/* ── Markdown loading indicator ──────────────────────────────────── */
+.dots-bounce {
+  display: flex;
+  min-height: 7.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.dots-bounce__dots {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dots-bounce__dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 9999px;
+  background: #27272a;
+  will-change: transform;
+}
+
+.dots-bounce__label {
+  color: #71717a;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.colorscheme-dark .dots-bounce__dot {
+  background: #e4e4e7;
+}
+
+.colorscheme-dark .dots-bounce__label {
+  color: #a1a1aa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dots-bounce__dot {
+    transform: none !important;
+    will-change: auto;
+  }
+}
+
 /* ── GitHub contributions ────────────────────────────────────────── */
 .github-calendar-root {
   margin-top: 4rem;
