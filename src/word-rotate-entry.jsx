@@ -2,12 +2,12 @@ import { createRoot } from "react-dom/client";
 import { MotionConfig } from "framer-motion";
 import { DotsBounce } from "./components/DotsBounce";
 import { GitHubContributions } from "./components/GitHubContributions";
-import { MatrixRain } from "./components/MatrixRain";
+import { HeroImageWall } from "./components/HeroImageWall";
 import { PublicationLinkSwap } from "./components/PublicationLinkSwap";
 import { WordRotate } from "./components/WordRotate";
 
 const mountNode = document.getElementById("word-rotate-root");
-const matrixRainMountNode = document.getElementById("matrix-rain-root");
+const heroImageWallMountNode = document.getElementById("hero-image-wall-root");
 const dotsBounceRoots = new Map();
 
 function getDotsBounceNodes(scope) {
@@ -84,8 +84,8 @@ mountPublicationLinks();
 mountGitHubContributions();
 mountDotsBounce();
 
-if (matrixRainMountNode) {
-  createRoot(matrixRainMountNode).render(<MatrixRain />);
+if (heroImageWallMountNode) {
+  createRoot(heroImageWallMountNode).render(<HeroImageWall />);
 }
 
 if (mountNode) {

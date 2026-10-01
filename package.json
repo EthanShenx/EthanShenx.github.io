@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build": "npm run build:word-rotate",
-    "build:word-rotate": "esbuild src/word-rotate-entry.jsx --bundle --minify --format=iife --target=es2018 --jsx=automatic --outfile=js/word-rotate.js"
+    "build:hero-cards": "node scripts/generate-hero-cards.mjs",
+    "build:word-rotate": "npm run build:hero-cards && esbuild src/word-rotate-entry.jsx --bundle --minify --format=iife --target=es2018 --jsx=automatic --outfile=js/word-rotate.js"
   },
   "dependencies": {
     "framer-motion": "^13.4.4",
