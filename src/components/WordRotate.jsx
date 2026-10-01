@@ -2,22 +2,23 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const DEFAULT_WORDS = [
-  "Bioinformatician",
-  "Genome Scientist",
-  "Final Year Undergrad",
-  "Computational Biologist",
+  "BIOINFORMATICIAN",
+  "GENOME SCIENTIST",
+  "FINAL YEAR UNDERGRAD",
+  "COMPUTATIONAL BIOLOGIST",
 ];
 const DEFAULT_INTERVAL = 1350;
 const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
 const WORD_STYLE_CLASSES = {
-  Bioinformatician: "word-rotate__word--bioinformatics",
-  "Genome Scientist": "word-rotate__word--genome",
-  "Final Year Undergrad": "word-rotate__word--undergrad",
-  "Computational Biologist": "word-rotate__word--computational",
+  bioinformatician: "word-rotate__word--bioinformatics",
+  "genome scientist": "word-rotate__word--genome",
+  "final year undergrad": "word-rotate__word--undergrad",
+  "computational biologist": "word-rotate__word--computational",
 };
 
 function getWordClassName(word, baseClassName) {
-  return [baseClassName, WORD_STYLE_CLASSES[word]].filter(Boolean).join(" ");
+  const styleClassName = WORD_STYLE_CLASSES[String(word).toLowerCase()];
+  return [baseClassName, styleClassName].filter(Boolean).join(" ");
 }
 
 export function WordRotate({

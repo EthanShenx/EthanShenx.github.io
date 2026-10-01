@@ -2,7 +2,7 @@ import { memo } from "react";
 import { heroCardImages } from "../generated/hero-card-images";
 
 const COLUMN_COUNT = 4;
-const COLUMN_DURATIONS = [18, 23, 20, 28];
+const COLUMN_DURATIONS = [16, 20, 18, 24];
 
 const imageColumns = Array.from({ length: COLUMN_COUNT }, () => []);
 heroCardImages.forEach((image, index) => {
