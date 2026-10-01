@@ -20,7 +20,6 @@
 @font-face { font-family: 'Jost'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/jost/jost-600-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: 'Zen Old Mincho'; font-style: normal; font-weight: 500; font-display: swap; src: url('https://fonts.gstatic.com/s/zenoldmincho/v13/tss3ApVaYytLwxTqcxfMyBveyb4Dqlla.ttf') format('truetype'); }
 @font-face { font-family: 'Courier Prime'; font-style: normal; font-weight: 700; font-display: swap; src: url('https://fonts.gstatic.com/s/courierprime/v11/u-4k0q2lgwslOqpF_6gQ8kELY7pMf-c.ttf') format('truetype'); }
-@font-face { font-family: 'Dosis'; font-style: normal; font-weight: 600; font-display: swap; src: url('https://fonts.gstatic.com/s/dosis/v34/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ6bQV3A.ttf') format('truetype'); }
 @font-face { font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; font-display: swap; src: url('https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATiw.ttf') format('truetype'); }
 @font-face { font-family: 'Sixtyfour Convergence'; font-style: normal; font-weight: 400; font-display: swap; src: url('https://fonts.gstatic.com/s/sixtyfourconvergence/v5/m8IQjepPf7mIglv5K__zM9srGA7wurbybZMfZsqG2Q6EWlJro5FJSJ4acT9PoOPwGgieaK7zkSpdXP-GrR9Yw9Tg7E4HGLbUKPlOh102hos.ttf') format('truetype'); }
 
@@ -1420,22 +1419,29 @@ p, li {
 }
 
 .word-rotate__word--undergrad {
-  color: #ffd7a0;
+  color: #ffc4ed;
   font-family: "Instrument Serif", Georgia, serif;
   font-size: 1.22em;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.012em;
-  text-shadow: 0 2px 16px rgba(255, 169, 77, 0.28);
+  text-shadow:
+    0 0 4px rgba(255, 196, 237, 0.98),
+    0 0 13px rgba(244, 114, 182, 0.78),
+    0 0 28px rgba(219, 39, 119, 0.48);
 }
 
 .word-rotate__word--genome {
-  color: #b7f7dc;
-  font-family: "Dosis", "Jost", sans-serif;
-  font-size: 1.16em;
+  color: #c9ff73;
+  font-family: "Jost", "Poppins", sans-serif;
+  font-size: 0.98em;
   font-weight: 600;
-  letter-spacing: 0.055em;
-  text-shadow: 0 0 14px rgba(110, 231, 183, 0.22);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 4px rgba(217, 255, 156, 0.98),
+    0 0 14px rgba(163, 230, 53, 0.78),
+    0 0 30px rgba(101, 163, 13, 0.48);
 }
 
 .word-rotate__word--bioinformatics {
@@ -1451,12 +1457,15 @@ p, li {
 }
 
 .word-rotate__word--computational {
-  color: #fff;
+  color: #ffbc67;
   font-family: "Sixtyfour Convergence", monospace;
   font-size: 0.7em;
   font-weight: 400;
   letter-spacing: 0;
-  text-shadow: none;
+  text-shadow:
+    0 0 4px rgba(255, 220, 169, 0.96),
+    0 0 14px rgba(251, 146, 60, 0.82),
+    0 0 30px rgba(234, 88, 12, 0.5);
 }
 
 @media only screen and (max-width: 360px) {

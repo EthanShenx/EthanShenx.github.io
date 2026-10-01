@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 const DEFAULT_WORDS = [
   "Bioinformatician",
   "Genome Scientist",
-  "A Final-Year Undergrad",
+  "Final Year Undergrad",
   "Computational Biologist",
 ];
 const DEFAULT_INTERVAL = 1350;
@@ -12,7 +12,7 @@ const WORD_TRANSITION = { duration: 0.4, ease: "easeInOut" };
 const WORD_STYLE_CLASSES = {
   Bioinformatician: "word-rotate__word--bioinformatics",
   "Genome Scientist": "word-rotate__word--genome",
-  "A Final-Year Undergrad": "word-rotate__word--undergrad",
+  "Final Year Undergrad": "word-rotate__word--undergrad",
   "Computational Biologist": "word-rotate__word--computational",
 };
 

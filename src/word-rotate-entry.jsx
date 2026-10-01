@@ -95,7 +95,7 @@ if (mountNode) {
         words={[
           "Bioinformatician",
           "Genome Scientist",
-          "A Final-Year Undergrad",
+          "Final Year Undergrad",
           "Computational Biologist",
         ]}
       />
