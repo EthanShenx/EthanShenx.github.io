@@ -28,7 +28,7 @@ const MarqueeColumn = memo(function MarqueeColumn({
           >
             {images.map((image, imageIndex) => (
               <img
-                className="hero-image-wall__image block w-full object-cover"
+                className="hero-image-wall__image block h-auto w-full object-contain"
                 src={image}
                 alt=""
                 aria-hidden="true"

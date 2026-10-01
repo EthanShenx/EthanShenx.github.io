@@ -1372,8 +1372,8 @@ p, li {
 .hero-image-wall__image {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 @keyframes hero-image-wall-scroll {
@@ -1391,10 +1391,10 @@ p, li {
   z-index: -1;
   background:
     linear-gradient(180deg,
-      rgba(9, 9, 11, 0.58) 0%,
-      rgba(9, 9, 11, 0.28) 22%,
-      rgba(9, 9, 11, 0.28) 70%,
-      rgba(9, 9, 11, 0.64) 100%);
+      rgba(9, 9, 11, 0.62) 0%,
+      rgba(9, 9, 11, 0.34) 22%,
+      rgba(9, 9, 11, 0.34) 70%,
+      rgba(9, 9, 11, 0.68) 100%);
 }
 
 .home-hero .navigation {
@@ -1579,10 +1579,10 @@ p, li {
   .home-hero__scrim {
     background:
       linear-gradient(180deg,
-        rgba(9, 9, 11, 0.62) 0%,
-        rgba(9, 9, 11, 0.34) 30%,
-        rgba(9, 9, 11, 0.34) 75%,
-        rgba(9, 9, 11, 0.68) 100%);
+        rgba(9, 9, 11, 0.66) 0%,
+        rgba(9, 9, 11, 0.40) 30%,
+        rgba(9, 9, 11, 0.40) 75%,
+        rgba(9, 9, 11, 0.72) 100%);
   }
 
   .home-hero__intro.container {

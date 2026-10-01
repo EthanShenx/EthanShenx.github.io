@@ -93,10 +93,10 @@ if (mountNode) {
     <MotionConfig reducedMotion="user">
       <WordRotate
         words={[
-          "Bioinformatician",
-          "Genome Scientist",
-          "Final Year Undergrad",
-          "Computational Biologist",
+          "BIOINFORMATICIAN",
+          "GENOME SCIENTIST",
+          "FINAL YEAR UNDERGRAD",
+          "COMPUTATIONAL BIOLOGIST",
         ]}
       />
     </MotionConfig>,
