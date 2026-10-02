@@ -1,5 +1,3 @@
-Hi! I'm Yuchen Shen, a dual-degree B.S. student in Biomedical Informatics at Zhejiang University and the University of Edinburgh. I study how genetic, epigenetic modifications, and 3D chromatin regulation shape aging, cancer, and development by combining computational approaches of single-cell multi-omics and functional assays.
-
 ### Education
 
 - **Zhejiang University**, Hangzhou, China
