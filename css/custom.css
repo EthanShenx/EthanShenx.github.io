@@ -509,6 +509,10 @@ p, li {
   max-height: 3.2rem;
 }
 
+.publication-link--gsuk img {
+  max-height: 3rem;
+}
+
 .colorscheme-dark .publication-date {
   color: #a1a1aa;
 }

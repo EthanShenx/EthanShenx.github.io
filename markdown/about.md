@@ -32,6 +32,16 @@
   </article>
 
   <article class="publication-entry">
+    <h3 class="publication-title"><strong>Genome-wide Mapping of Transcription Start Sites Reveals Alternative TSS Usage during Mammalian Zygotic Genome Activation</strong></h3>
+    <p class="publication-authors"><strong><u>Shen, Y.</u></strong>, He, L., Sun, H.<sup>*</sup>, Wang, H.<sup>*</sup> <time class="publication-date" datetime="2026-07">(Jul 2026)</time></p>
+    <div class="publication-links" aria-label="Links for Genome-wide Mapping of Transcription Start Sites Reveals Alternative TSS Usage during Mammalian Zygotic Genome Activation">
+      <a class="publication-link publication-link--gsuk" href="https://drive.google.com/file/d/1hvy_N98qb0SyoTeoSXnkNGjg4ElYW6Y2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Read Genome-wide Mapping of Transcription Start Sites Reveals Alternative TSS Usage during Mammalian Zygotic Genome Activation">
+        <img src="/images/Journals/GSUK.png" alt="Genome Science UK" />
+      </a>
+    </div>
+  </article>
+
+  <article class="publication-entry">
     <h3 class="publication-title"><strong>MAPA: A Semantic Network Framework for Functional Module Discovery and Interpretation in Multi-Omics Data</strong></h3>
     <p class="publication-authors">Ge, Y., Zhang, F., Liu, Y., Jiang, C., Gao, P., Tan, N. S., Zhang, S., <strong><u>Shen, Y.</u></strong>, Zhou, Q., Zhou, X., Wang, X., Zhao, F., Wang, C.<sup>*</sup>, Shen, X.<sup>*</sup> <time class="publication-date" datetime="2026-09">(Sep 2026)</time></p>
     <div class="publication-links" aria-label="Links for MAPA">
