@@ -1443,7 +1443,9 @@ p, li {
   padding: 0;
   border: 0;
   border-radius: 0.14em;
-  background: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
   color: inherit;
   font: inherit;
   line-height: 1.1;
@@ -1475,6 +1477,7 @@ p, li {
 .word-rotate__word {
   justify-self: center;
   text-align: center;
+  background: transparent;
   will-change: transform, opacity;
 }
 
@@ -1489,10 +1492,7 @@ p, li {
   font-weight: 400;
   letter-spacing: normal;
   text-transform: uppercase;
-  text-shadow:
-    0 0 4px rgba(255, 255, 255, 0.98),
-    0 0 14px rgba(255, 255, 255, 0.76),
-    0 0 30px rgba(255, 255, 255, 0.46);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.72);
 }
 
 .home-hero__affiliation {
